@@ -1,0 +1,165 @@
+{
+  "positive_cases": [
+    {
+      "description": "Update Settings - Success",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Name Too Long",
+      "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - SIP Number Optional",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - SIP Extension Optional",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - All Optional Fields",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "events_view_type": 1
+    },
+    {
+      "description": "Update Settings - Invalid Name Chars",
+      "name": "John@Doe!",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Invalid Time Zone",
+      "name": "John Doe",
+      "time_zone": "Invalid/Zone",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Missing Locale",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1
+    },
+    {
+      "description": "Update Settings - Name with Spaces",
+      "name": " John Doe ",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Time Zone with Spaces",
+      "name": "John Doe",
+      "time_zone": " Asia/Yakutsk ",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Locale with Spaces",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": " en "
+    },
+    {
+      "description": "Update Settings - Invalid SIP Number",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123@456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Invalid SIP Extension",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "789@0",
+      "events_view_type": 1,
+      "locale": "en"
+    }
+  ],
+  "negative_cases": [
+    {
+      "description": "Update Settings - Missing Name",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Name Too Short",
+      "name": "",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Non-Latin Name",
+      "name": "漢字テスト",
+      "time_zone": "Asia/Yakutsk",
+      "events_view_type": 2,
+      "locale": "fr"
+    },
+    {
+      "description": "Update Settings - Missing Events View",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Invalid Events View",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 3,
+      "locale": "en"
+    },
+    {
+      "description": "Update Settings - Invalid Locale Value",
+      "name": "John Doe",
+      "time_zone": "Asia/Yakutsk",
+      "sip_number": "123456",
+      "sip_extension": "7890",
+      "events_view_type": 1,
+      "locale": "xx"
+    }
+  ]
+}
