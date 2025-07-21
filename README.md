@@ -1,5 +1,7 @@
 # Antisleep API Automation Python Tests
 
+This repository contains API automation tests for the Antisleep web application, specifically focusing on the authorization and user settings changing functionality. These tests are built using Python, Selenium, Pytest, and Allure for comprehensive reporting.
+# URL for a required video demonstration: https://disk.yandex.ru/i/qFFqQiVKqfhLPw
 Cсылка на постман с коллекциями: https://app.getpostman.com/join-team?invite_code=72d033782172be3d22d1d436a429661d209b8dfb9015786e027d1d97910bcc09&target_code=b83c1a9d4ed9cb23cdfd0768d9585c10
 
 # A. Authentication Test Cases
