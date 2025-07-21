@@ -1,0 +1,66 @@
+[
+  {
+    "case_id": "TC-A1",
+    "description": "Login – Success",
+    "email": "demo@demo.ru",
+    "password": "Demo1704@demo.ru",
+    "expected_status": 200,
+    "expected_error": null
+  },
+  {
+    "case_id": "TC-A2",
+    "description": "Login – Wrong Password",
+    "email": "demo@demo.ru",
+    "password": "WrongPass123",
+    "expected_status": 401,
+    "expected_error": "Invalid username or password"
+  },
+  {
+    "case_id": "TC-A3",
+    "description": "Login – Wrong Email",
+    "email": "notexist@demo.ru",
+    "password": "Demo1704@demo.ru",
+    "expected_status": 401,
+    "expected_error": "Invalid username or password"
+  },
+  {
+    "case_id": "TC-A4",
+    "description": "Login – Missing Both Fields",
+    "email": "",
+    "password": "",
+    "expected_status": 422,
+    "expected_error": "The email field is required"
+  },
+  {
+    "case_id": "TC-A5",
+    "description": "Login – Missing Email Field",
+    "email": "",
+    "password": "Demo1704@demo.ru",
+    "expected_status": 422,
+    "expected_error": "The email field is required"
+  },
+  {
+    "case_id": "TC-A6",
+    "description": "Login – Missing Password Field",
+    "email": "demo@demo.ru",
+    "password": "",
+    "expected_status": 422,
+    "expected_error": "The password field is required"
+  },
+{
+  "case_id": "TC-A7",
+  "description": "Login – Email Too Short",
+  "email": "a@b",
+  "password": "Demo1704@demo.ru",
+  "expected_status": 401,
+  "expected_error": "Invalid username or password"
+},
+  {
+    "case_id": "TC-A8",
+    "description": "Login – Email Invalid Format",
+    "email": "notanemail",
+    "password": "Demo1704@demo.ru",
+    "expected_status": 422,
+    "expected_error": "The email must be a valid email address"
+  }
+]
